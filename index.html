@@ -4,46 +4,126 @@
 <head>
     <meta charset="utf-8">
     <PageTitle>Vojislav Damnjanovic</title>
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+    .education-table {
+        width: 100%;
+        border-collapse: separate;
+        border: 2px solid #0d6efd;
+        table-layout: fixed;
+    }
+
+    .education-table th,
+    .education-table td {
+        border: 1px solid #0d6efd;
+        padding: 10px;
+        vertical-align: middle;
+        word-wrap: break-word;
+    }
+
+
+    .education-table thead th {
+        background-color: #0d6efd;
+        color: white;
+        text-align: center;
+    }
+
+
+    .education-table th.year-col,
+    .education-table td:first-child {
+        width: 20%;
+        text-align: center;
+        font-weight: bold;
+        border-right: 2px solid #0d6efd;
+    }
+
+    .education-table th.event-col,
+    .education-table td:last-child {
+        width: 80%;
+    }
+</style>
 
 <body class="bg-light">
 
-    <div class="container py-5">
+    <div class="container my-5 py-5">
         <header class="text-center mb-5">
             <h1 class="display-4">Vojislav Damnjanovic</h1>
             <p> My name is Vojislav Damnjanovic. This is my web presentation.
                 This presentation will be visible from any point in the world.</p>
             <p>Im a student at <a href="https://www.ekof.bg.ac.rs/" target="_blank">the Faculty of Economics</a>, <a
                     href="https://www.bg.ac.rs/">University in Belgrade</a></p>
-            <img src="voja.jpg" alt="Vojislav Damnjanovic"  width="85" height="83">
+            <img src="voja.jpg" alt="Vojislav Damnjanovic" width="450" height="450">
         </header>
 
-        <section>
-            <h3 class="mb-3">Education</h2>
-            <table class="table table-bordered education-table">
-                <thead>
-                    <tr>
-                        <th style="width: 20%;"Year></th>
-                        <th>Event</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td>2018</td>
-                    <td>Graduated from primary school "Disa Djurdjevic" in Vreoci, recieved the Vuk's diploma and was
-                        student of the year</td>
-                    </tr>
-                    <tr>
-                        <td>2022</td>
-                        <td>Graduated from high school "The Gymnasium in Lazarevac", Social-Linguistic program</td>
-                    </tr>
-                    <td>2025-present</td>
-                    <td>International Master in Business Informatics, Faculty of Economics</td>
-                </tbody>
-            </table>
-        </section>
-    </div>
+        <section class="mb-5">
+            <div class="container my-5 p-5 bg-white" <h2 class="mb-3">Biography</h2>
+                <p>I was born on September 23, 2003, in Belgrade. I have an older sister and a younger brother, who are
+                    my
+                    true companions in this game called life. I spent my childhood years playing sports and have always
+                    shown an interest in education and school. I am motivated, assiduos and diligent type of guy. I am
+                    particularly interested in management and
+                    information systems. In my free time, I like to hang out with my friends, play sports and watch
+                    movies.
+                </p>
+                <p> "One good turn deserves another."</p>
+
+                <section class="mb-5">
+                    <h3 class="mb-3">Education</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered education-table">
+                            <thead>
+                                <tr>
+                                    <th class="year-col">Year</th>
+                                    <th class="event-col">Event</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2018</td>
+                                    <td>Graduated from primary school "Disa Djurdjevic" in Vreoci, recieved the Vuk's
+                                        diploma
+                                        and was
+                                        student of the year</td>
+                                </tr>
+                                <tr>
+                                    <td>2022</td>
+                                    <td>Graduated from high school "The Gymnasium in Lazarevac", Social-Linguistic
+                                        program
+                                    </td>
+                                </tr>
+                                <td>2025-present</td>
+                                <td>International Master in Business Informatics, Faculty of Economics</td>
+                            </tbody>
+                        </table>
+                </section>
+            </div>
+
+            <section class="mb-5">
+                <div class="container my-5 p-5 border bg-white">
+                    <h4 class="mb-3">Languages</h4>
+                    <p>Click on a language to see more info:</p>
+
+                    <a href="#serbian" class="badge badge-primary language-badge">Serbian</a>
+                    <a href="#english" class="badge badge-success language-badge">English</a>
+                    <a href="#german" class="badge badge-warning language-badge">German</a>
+
+                    <div id="serbian" class="mt-3">
+                        <strong>Serbian:</strong> Native language
+                    </div>
+                    <div id="english" class="mt-2">
+                        <strong>English:</strong> Advanced (C1)
+                    </div>
+                    <div id="german" class="mt-2">
+                        <strong>Russian:</strong> Intermediate (B1)
+                    </div>
+                    <div id="italian" class="mt-2">
+                        <strong>Italian:</strong> Beginner (A1)
+                    </div>
+                </div>
+                <div>
+            </section>
 
 </body>
 
