@@ -44,18 +44,31 @@
     .education-table td:last-child {
         width: 80%;
     }
+
+    .profile-pic {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+        transform: scale(1.05);
+    }
+
+    .profile-pic:active {
+        transform: scale(1.15);
+    }
 </style>
 
 <body class="bg-light">
 
     <div class="container my-5 p-5 bg-white">
         <header class="text-center mb-5">
-            <h1 class="display-4">Vojislav Damnjanovic</h1>
+            <h1 class="display-4"><strong>Vojislav Damnjanovic</strong></h1>
             <p> My name is Vojislav Damnjanovic. This is my web presentation.
                 This presentation will be visible from any point in the world.</p>
             <p>Im a student at <a href="https://www.ekof.bg.ac.rs/" target="_blank">the Faculty of Economics</a>, <a
                     href="https://www.bg.ac.rs/" target="_blank">University in Belgrade.</a></p>
-            <img src="voja.jpg" alt="Vojislav Damnjanovic" class="img-fluid rounded-circle mb-3"
+            <img src="voja.jpg" alt="Vojislav Damnjanovic" class="img-fluid rounded-circle mb-3 profile-pic"
                 style="max-width: 350px;">
         </header>
 
@@ -77,8 +90,7 @@
                             guy. I am
                             particularly interested in management and
                             information systems. In my free time, I like to hang out with my friends, play sports and
-                            watch
-                            movies.
+                            watch movies.
                         </p>
                         <p>"One good turn deserves another."</p>
                     </div>
@@ -148,14 +160,24 @@
 
             <section class="mb-5">
                 <div class="container my-5 p-5 border bg-white rounded">
-                    <h6 class="mb-3">Skills</h6>
+                    <h7 class="mb-3"><strong>Certificate</strong></h7>
                     <ul class="list-unstyled">
-                        <li>Html, C# Programming - Beginner</li>
-                        <li>Project Management - Intermediate</li>
-                        <li>Microsoft Office Suit - Advanced</li>
-                        <li>Teamwork and Communication - Advanced</li>
+                        <li><strong>IPMA Registered Diploma</strong> – Project Management (2025)</li>
+                        <li><strong>English Language Certificate</strong> – CEFR Level C1 (2025)</li>
                     </ul>
             </section>
+
+            <section class="mb-5">
+                <div class="container my-5 p-5 border bg-white rounded">
+                    <h8 class="mb-3"><strong>Skills</strong></h8>
+                    <ul class="list-unstyled">
+                        <li>Microsoft Office Suite</li>
+                        <li>Teamwork and problem solving</li>
+                        <li>Communication Skills</li>
+                        <li>Project Management</li>
+                    </ul>
+            </section>
+
 </body>
 
 
